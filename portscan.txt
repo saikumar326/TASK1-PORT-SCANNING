@@ -1,0 +1,313 @@
+nmap -sS 192.168.2.174/24 -oN /home/kali/Documents/nmap.txt
+
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-08-04 15:49 IST
+Nmap scan report for 192.168.2.1
+Host is up (0.0084s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+53/tcp   open  domain
+80/tcp   open  http
+443/tcp  open  https
+1900/tcp open  upnp
+MAC Address: D8:44:89:1E:12:79 (TP-Link PTE.)
+
+Nmap scan report for 192.168.2.105
+Host is up (0.0082s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT      STATE SERVICE
+80/tcp    open  http
+443/tcp   open  https
+44443/tcp open  coldfusion-auth
+MAC Address: E4:FA:C4:3E:D7:04 (TP-Link PTE.)
+
+Nmap scan report for 192.168.2.107
+Host is up (0.18s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT  STATE    SERVICE
+7/tcp filtered echo
+MAC Address: BE:60:77:77:FB:C4 (Unknown)
+
+Nmap scan report for 192.168.2.109
+Host is up (0.10s latency).
+All 1000 scanned ports on 192.168.2.109 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 90:65:84:A5:DE:21 (Intel Corporate)
+
+Nmap scan report for 192.168.2.110
+Host is up (0.0014s latency).
+All 1000 scanned ports on 192.168.2.110 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: EC:2E:98:EA:83:79 (AzureWave Technology)
+
+Nmap scan report for 192.168.2.117
+Host is up (0.012s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2179/tcp open  vmrdp
+3000/tcp open  ppp
+MAC Address: F4:A4:75:32:73:5F (Intel Corporate)
+
+Nmap scan report for 192.168.2.118
+Host is up (0.012s latency).
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2968/tcp open  enpp
+MAC Address: F4:A4:75:31:FD:BC (Intel Corporate)
+
+Nmap scan report for 192.168.2.121
+Host is up (0.14s latency).
+All 1000 scanned ports on 192.168.2.121 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 58:02:05:48:50:36 (Unknown)
+
+Nmap scan report for 192.168.2.132
+Host is up (0.030s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+8081/tcp open  blackice-icecap
+8082/tcp open  blackice-alerts
+MAC Address: 90:65:84:13:24:C8 (Intel Corporate)
+
+Nmap scan report for 192.168.2.133
+Host is up (0.025s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+3306/tcp open  mysql
+MAC Address: F4:8C:50:A4:66:81 (Intel Corporate)
+
+Nmap scan report for 192.168.2.135
+Host is up (0.087s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT  STATE    SERVICE
+7/tcp filtered echo
+MAC Address: E2:5B:38:A2:0C:AC (Unknown)
+
+Nmap scan report for 192.168.2.139
+Host is up (0.011s latency).
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3306/tcp open  mysql
+MAC Address: D4:E9:8A:79:6C:97 (Intel Corporate)
+
+Nmap scan report for 192.168.2.141
+Host is up (0.016s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+8081/tcp open  blackice-icecap
+MAC Address: 90:65:84:AA:15:EF (Intel Corporate)
+
+Nmap scan report for 192.168.2.142
+Host is up.
+All 1000 scanned ports on 192.168.2.142 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: EC:8E:77:A2:A2:BA (Unknown)
+
+Nmap scan report for 192.168.2.143
+Host is up.
+All 1000 scanned ports on 192.168.2.143 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: F0:20:FF:FA:11:7B (Intel Corporate)
+
+Nmap scan report for 192.168.2.145
+Host is up (0.015s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+135/tcp open  msrpc
+445/tcp open  microsoft-ds
+MAC Address: E8:D0:FC:E0:98:F1 (Liteon Technology)
+
+Nmap scan report for 192.168.2.149
+Host is up (0.026s latency).
+All 1000 scanned ports on 192.168.2.149 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: D6:45:14:83:35:20 (Unknown)
+
+Nmap scan report for 192.168.2.155
+Host is up (0.015s latency).
+Not shown: 993 closed tcp ports (reset)
+PORT     STATE SERVICE
+80/tcp   open  http
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2701/tcp open  sms-rcinfo
+2869/tcp open  icslap
+3389/tcp open  ms-wbt-server
+MAC Address: C8:5E:A9:25:56:43 (Intel Corporate)
+
+Nmap scan report for 192.168.2.157
+Host is up (0.012s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+515/tcp  open  printer
+631/tcp  open  ipp
+8080/tcp open  http-proxy
+9100/tcp open  jetdirect
+MAC Address: E0:70:EA:F8:E9:99 (HP)
+
+Nmap scan report for 192.168.2.162
+Host is up (0.0095s latency).
+Not shown: 997 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+7070/tcp  open  realserver
+8080/tcp  open  http-proxy
+50001/tcp open  unknown
+MAC Address: 14:13:33:E0:3F:B5 (AzureWave Technology)
+
+Nmap scan report for 192.168.2.163
+Host is up (0.14s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT      STATE    SERVICE
+5060/tcp  filtered sip
+44443/tcp filtered coldfusion-auth
+MAC Address: 5E:42:45:67:1B:04 (Unknown)
+
+Nmap scan report for 192.168.2.177
+Host is up (0.025s latency).
+All 1000 scanned ports on 192.168.2.177 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 76:23:2F:37:16:88 (Unknown)
+
+Nmap scan report for 192.168.2.182
+Host is up (0.18s latency).
+All 1000 scanned ports on 192.168.2.182 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: E4:A4:71:94:07:0A (Intel Corporate)
+
+Nmap scan report for 192.168.2.184
+Host is up (0.14s latency).
+All 1000 scanned ports on 192.168.2.184 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: D4:E9:8A:77:EA:52 (Intel Corporate)
+
+Nmap scan report for 192.168.2.185
+Host is up (0.079s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE    SERVICE
+5060/tcp filtered sip
+MAC Address: 9A:23:F0:C7:72:8D (Unknown)
+
+Nmap scan report for 192.168.2.191
+Host is up (0.18s latency).
+All 1000 scanned ports on 192.168.2.191 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 90:E8:68:80:D7:55 (AzureWave Technology)
+
+Nmap scan report for 192.168.2.198
+Host is up (0.039s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+80/tcp open  http
+MAC Address: 28:A0:6B:AF:82:AA (Intel Corporate)
+
+Nmap scan report for 192.168.2.201
+Host is up (0.0053s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+MAC Address: F0:A7:31:93:60:70 (TP-Link Limited)
+
+Nmap scan report for 192.168.2.202
+Host is up (0.021s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2179/tcp open  vmrdp
+7070/tcp open  realserver
+MAC Address: 84:14:4D:2F:47:48 (Intel Corporate)
+
+Nmap scan report for 192.168.2.208
+Host is up (0.027s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE    SERVICE
+5060/tcp filtered sip
+MAC Address: 46:87:31:BC:5C:78 (Unknown)
+
+Nmap scan report for 192.168.2.215
+Host is up (0.096s latency).
+All 1000 scanned ports on 192.168.2.215 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 8C:3B:4A:AE:93:D3 (Universal Global Scientific Industrial)
+
+Nmap scan report for 192.168.2.217
+Host is up (0.063s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE    SERVICE
+5060/tcp filtered sip
+MAC Address: C6:0D:77:6B:F2:81 (Unknown)
+
+Nmap scan report for 192.168.2.219
+Host is up (0.090s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+80/tcp open  http
+MAC Address: C0:A5:E8:7D:F6:4A (Intel Corporate)
+
+Nmap scan report for 192.168.2.221
+Host is up (0.23s latency).
+All 1000 scanned ports on 192.168.2.221 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: D0:AB:D5:F4:EE:DF (Intel Corporate)
+
+Nmap scan report for 192.168.2.230
+Host is up (0.058s latency).
+All 1000 scanned ports on 192.168.2.230 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 34:F3:9A:CD:AF:37 (Intel Corporate)
+
+Nmap scan report for 192.168.2.234
+Host is up (0.13s latency).
+All 1000 scanned ports on 192.168.2.234 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: F8:E4:E3:9E:86:85 (Intel Corporate)
+
+Nmap scan report for 192.168.2.235
+Host is up (0.0085s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+7070/tcp open  realserver
+MAC Address: A8:93:4A:60:CA:47 (Chongqing Fugui Electronics)
+
+Nmap scan report for 192.168.2.238
+Host is up (0.11s latency).
+All 1000 scanned ports on 192.168.2.238 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: C8:6E:08:29:2D:04 (Unknown)
+
+Nmap scan report for 192.168.2.239
+Host is up (0.012s latency).
+Not shown: 997 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+3306/tcp open  mysql
+6646/tcp open  unknown
+MAC Address: AC:50:DE:C9:5A:27 (Cloud Network Technology Singapore PTE.)
+
+Nmap scan report for 192.168.2.240
+Host is up (0.097s latency).
+All 1000 scanned ports on 192.168.2.240 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 50:EB:71:A9:68:07 (Intel Corporate)
+
+Nmap scan report for 192.168.2.174
+Host is up (0.000011s latency).
+All 1000 scanned ports on 192.168.2.174 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Nmap done: 256 IP addresses (41 hosts up) scanned in 650.37 seconds

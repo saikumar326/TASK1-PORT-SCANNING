@@ -1,0 +1,747 @@
+# Nmap 7.95 scan initiated Mon Aug  4 16:22:24 2025 as: /usr/lib/nmap/nmap --privileged -sV -oN /home/kali/Documents/services.txt 192.168.2.174/24
+Nmap scan report for 192.168.2.1
+Host is up (0.0081s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 6.6.0 (protocol 2.0)
+53/tcp   open  tcpwrapped
+80/tcp   open  http       TP-LINK router http config
+443/tcp  open  ssl/https
+1900/tcp open  upnp       TP-LINK router upnpd
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=8/4%Time=68909A0E%P=x86_64-pc-linux-gnu%
+SF:r(GetRequest,56,"HTTP/1\.0\x20302\x20Moved\x20Temporarily\r\nLocation:\
+SF:x20http://192\.168\.2\.1:80\r\nConnection:\x20close\r\n\r\n")%r(HTTPOpt
+SF:ions,89,"HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nContent-Type:\
+SF:x20text/html;charset=UTF-8\r\nContent-Length:\x200\r\nConnection:\x20cl
+SF:ose\r\nCache-control:\x20no-cache\r\n\r\n")%r(FourOhFourRequest,81,"HTT
+SF:P/1\.0\x20403\x20Forbidden\r\nContent-Type:\x20text/plain;charset=UTF-8
+SF:\r\nContent-Length:\x200\r\nConnection:\x20close\r\nCache-control:\x20n
+SF:o-cache\r\n\r\n")%r(GenericLines,82,"HTTP/1\.1\x20400\x20Bad\x20Request
+SF:\r\nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x200\r\
+SF:nConnection:\x20close\r\nCache-control:\x20no-cache\r\n\r\n")%r(RTSPReq
+SF:uest,89,"HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nContent-Type:\
+SF:x20text/html;charset=UTF-8\r\nContent-Length:\x200\r\nConnection:\x20cl
+SF:ose\r\nCache-control:\x20no-cache\r\n\r\n")%r(Help,82,"HTTP/1\.1\x20400
+SF:\x20Bad\x20Request\r\nContent-Type:\x20text/html;charset=UTF-8\r\nConte
+SF:nt-Length:\x200\r\nConnection:\x20close\r\nCache-control:\x20no-cache\r
+SF:\n\r\n")%r(TerminalServerCookie,82,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x200\r\n
+SF:Connection:\x20close\r\nCache-control:\x20no-cache\r\n\r\n")%r(SIPOptio
+SF:ns,89,"HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nContent-Type:\x2
+SF:0text/html;charset=UTF-8\r\nContent-Length:\x200\r\nConnection:\x20clos
+SF:e\r\nCache-control:\x20no-cache\r\n\r\n");
+MAC Address: D8:44:89:1E:12:79 (TP-Link PTE.)
+
+Nmap scan report for 192.168.2.105
+Host is up (0.0069s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT      STATE SERVICE   VERSION
+80/tcp    open  http      TP-LINK HTTPD/1.0
+443/tcp   open  ssl/https TP-LINK HTTPD/1.0
+44443/tcp open  ssl/http  TP-LINK TD-W8968 http admin
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=8/4%Time=68909A0A%P=x86_64-pc-linux-gnu%r(GetRe
+SF:quest,2AE2,"HTTP/1\.1\x20200\x20OK\r\nServer:\x20TP-LINK\x20HTTPD/1\.0\
+SF:r\nX-Frame-Options:\x20SAMEORIGIN\r\nConnection:\x20close\r\nSet-Cookie
+SF::\x20COOKIE=c0a802aed68ea7abd94512634c0b0379e264fec4;\x20PATH=/;\x20MAX
+SF:AGE=9999;\x20VERSION=1\r\nContent-Type:\x20text/html\r\n\r\n<!DOCTYPE\x
+SF:20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\
+SF:"\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\">\r\
+SF:n<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\">\r\n<head>\r\n<meta\
+SF:x20http-equiv=\"Content-Type\"\x20content=\"text/html;\x20charset=utf-8
+SF:\"\x20/>\r\n<meta\x20http-equiv=\"pragma\"\x20content=\"no-cache\"\x20/
+SF:>\r\n<meta\x20http-equiv=\"Cache-Control\"\x20content=\"no-cache,\x20mu
+SF:st-revalidate\"\x20/>\r\n<meta\x20http-equiv=\"expires\"\x20content=\"W
+SF:ed,\x2026\x20Feb\x201997\x2008:33:43\x20GMT\"\x20/>\r\n<!--\x20<link\x2
+SF:0type=\"text/css\"\x20href=\"\.\./css/reset\.css\"\x20rel=\"stylesheet\
+SF:"\x20/>\x20-->\r\n<link\x20type=\"text/css\"\x20href=\"\.\./css/widget\
+SF:.css\"\x20rel=\"stylesheet\"\x20/>\r\n\r\n<link\x20type=\"text/css\"\x2
+SF:0href=\"\.\./themes/dark/css/widget\.css\"\x20rel=\"stylesheet\"\x20/>\
+SF:r\n<link\x20type=\"text/css\"\x20")%r(HTTPOptions,132,"HTTP/1\.1\x20404
+SF:\x20Not\x20Found\r\nServer:\x20TP-LINK\x20HTTPD/1\.0\r\nX-Frame-Options
+SF::\x20SAMEORIGIN\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r
+SF:\n\r\n<H1>Web\x20Server\x20Error\x20Report:</H1><HR>\n<H2>Server\x20Err
+SF:or:\x20404\x20Not\x20Found</H2><HR>\r\n<H2>File\x20not\x20found</H2><HR
+SF:>\r\n<H2>/index\.html</H2><HR>\r\n<H3>Please\x20contact\x20customer\x20
+SF:service</H3><HR>\n")%r(RTSPRequest,132,"HTTP/1\.1\x20404\x20Not\x20Foun
+SF:d\r\nServer:\x20TP-LINK\x20HTTPD/1\.0\r\nX-Frame-Options:\x20SAMEORIGIN
+SF:\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<H1>Web\x
+SF:20Server\x20Error\x20Report:</H1><HR>\n<H2>Server\x20Error:\x20404\x20N
+SF:ot\x20Found</H2><HR>\r\n<H2>File\x20not\x20found</H2><HR>\r\n<H2>/index
+SF:\.html</H2><HR>\r\n<H3>Please\x20contact\x20customer\x20service</H3><HR
+SF:>\n")%r(FourOhFourRequest,12C,"HTTP/1\.1\x20404\x20Not\x20Found\r\nServ
+SF:er:\x20TP-LINK\x20HTTPD/1\.0\r\nX-Frame-Options:\x20SAMEORIGIN\r\nConne
+SF:ction:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<H1>Web\x20Server\
+SF:x20Error\x20Report:</H1><HR>\n<H2>Server\x20Error:\x20404\x20Not\x20Fou
+SF:nd</H2><HR>\r\n<H2>File\x20not\x20found</H2><HR>\r\n<H2>/nice</H2><HR>\
+SF:r\n<H3>Please\x20contact\x20customer\x20service</H3><HR>\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=8/4%Time=68909A0F%P=x86_64-pc-linux-gnu%
+SF:r(GetRequest,2AE2,"HTTP/1\.1\x20200\x20OK\r\nServer:\x20TP-LINK\x20HTTP
+SF:D/1\.0\r\nX-Frame-Options:\x20SAMEORIGIN\r\nConnection:\x20close\r\nSet
+SF:-Cookie:\x20COOKIE=c0a802ae04328feb93e548e87282ff2a1cc74bb1;\x20PATH=/;
+SF:\x20MAXAGE=9999;\x20VERSION=1\r\nContent-Type:\x20text/html\r\n\r\n<!DO
+SF:CTYPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transition
+SF:al//EN\"\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dt
+SF:d\">\r\n<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\">\r\n<head>\r\
+SF:n<meta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;\x20charse
+SF:t=utf-8\"\x20/>\r\n<meta\x20http-equiv=\"pragma\"\x20content=\"no-cache
+SF:\"\x20/>\r\n<meta\x20http-equiv=\"Cache-Control\"\x20content=\"no-cache
+SF:,\x20must-revalidate\"\x20/>\r\n<meta\x20http-equiv=\"expires\"\x20cont
+SF:ent=\"Wed,\x2026\x20Feb\x201997\x2008:33:43\x20GMT\"\x20/>\r\n<!--\x20<
+SF:link\x20type=\"text/css\"\x20href=\"\.\./css/reset\.css\"\x20rel=\"styl
+SF:esheet\"\x20/>\x20-->\r\n<link\x20type=\"text/css\"\x20href=\"\.\./css/
+SF:widget\.css\"\x20rel=\"stylesheet\"\x20/>\r\n\r\n<link\x20type=\"text/c
+SF:ss\"\x20href=\"\.\./themes/dark/css/widget\.css\"\x20rel=\"stylesheet\"
+SF:\x20/>\r\n<link\x20type=\"text/css\"\x20")%r(HTTPOptions,132,"HTTP/1\.1
+SF:\x20404\x20Not\x20Found\r\nServer:\x20TP-LINK\x20HTTPD/1\.0\r\nX-Frame-
+SF:Options:\x20SAMEORIGIN\r\nConnection:\x20close\r\nContent-Type:\x20text
+SF:/html\r\n\r\n<H1>Web\x20Server\x20Error\x20Report:</H1><HR>\n<H2>Server
+SF:\x20Error:\x20404\x20Not\x20Found</H2><HR>\r\n<H2>File\x20not\x20found<
+SF:/H2><HR>\r\n<H2>/index\.html</H2><HR>\r\n<H3>Please\x20contact\x20custo
+SF:mer\x20service</H3><HR>\n")%r(FourOhFourRequest,12C,"HTTP/1\.1\x20404\x
+SF:20Not\x20Found\r\nServer:\x20TP-LINK\x20HTTPD/1\.0\r\nX-Frame-Options:\
+SF:x20SAMEORIGIN\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n
+SF:\r\n<H1>Web\x20Server\x20Error\x20Report:</H1><HR>\n<H2>Server\x20Error
+SF::\x20404\x20Not\x20Found</H2><HR>\r\n<H2>File\x20not\x20found</H2><HR>\
+SF:r\n<H2>/nice</H2><HR>\r\n<H3>Please\x20contact\x20customer\x20service</
+SF:H3><HR>\n")%r(GenericLines,12E,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nS
+SF:erver:\x20TP-LINK\x20HTTPD/1\.0\r\nX-Frame-Options:\x20SAMEORIGIN\r\nCo
+SF:nnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<H1>Web\x20Serv
+SF:er\x20Error\x20Report:</H1><HR>\n<H2>Server\x20Error:\x20400\x20Bad\x20
+SF:Request</H2><HR>\r\n<H2>URL\x20parsing\x20error</H2><HR>\r\n<H2></H2><H
+SF:R>\r\n<H3>Please\x20contact\x20customer\x20service</H3><HR>\n");
+MAC Address: E4:FA:C4:3E:D7:04 (TP-Link PTE.)
+Service Info: Device: WAP; CPE: cpe:/h:tp-link:td-w8968
+
+Nmap scan report for 192.168.2.106
+Host is up (0.011s latency).
+All 1000 scanned ports on 192.168.2.106 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 6E:48:78:1F:29:F4 (Unknown)
+
+Nmap scan report for 192.168.2.107
+Host is up (0.056s latency).
+All 1000 scanned ports on 192.168.2.107 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: BE:60:77:77:FB:C4 (Unknown)
+
+Nmap scan report for 192.168.2.109
+Host is up (0.090s latency).
+All 1000 scanned ports on 192.168.2.109 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 90:65:84:A5:DE:21 (Intel Corporate)
+
+Nmap scan report for 192.168.2.110
+Host is up (0.0023s latency).
+All 1000 scanned ports on 192.168.2.110 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: EC:2E:98:EA:83:79 (AzureWave Technology)
+
+Nmap scan report for 192.168.2.117
+Host is up (0.076s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+2179/tcp open  vmrdp?
+3000/tcp open  http          Node.js Express framework
+MAC Address: F4:A4:75:32:73:5F (Intel Corporate)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.2.118
+Host is up (0.098s latency).
+Not shown: 997 filtered tcp ports (no-response)
+PORT    STATE SERVICE       VERSION
+135/tcp open  msrpc         Microsoft Windows RPC
+139/tcp open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp open  microsoft-ds?
+MAC Address: F4:A4:75:31:FD:BC (Intel Corporate)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.2.121
+Host is up (0.15s latency).
+All 1000 scanned ports on 192.168.2.121 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 58:02:05:48:50:36 (Unknown)
+
+Nmap scan report for 192.168.2.132
+Host is up (0.056s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT     STATE SERVICE          VERSION
+8081/tcp open  blackice-icecap?
+8082/tcp open  blackice-alerts?
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8081-TCP:V=7.95%I=7%D=8/4%Time=68909A0A%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,22E,"HTTP/1\.1\x20200\x20OK\r\nX-Content-Type-Options:\x20nosni
+SF:ff\r\nSurrogate-Control:\x20no-store\r\nCache-Control:\x20no-store,\x20
+SF:no-cache,\x20must-revalidate,\x20proxy-revalidate\r\nPragma:\x20no-cach
+SF:e\r\nExpires:\x200\r\nContent-Type:\x20text/html\r\nVary:\x20Accept-Enc
+SF:oding\r\nDate:\x20Mon,\x2004\x20Aug\x202025\x2011:31:20\x20GMT\r\nConne
+SF:ction:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html>\n\x20\x20<head>\n\x20
+SF:\x20\x20\x20<title>React\x20Native</title>\n\x20\x20</head>\n\x20\x20<b
+SF:ody>\n\x20\x20\x20\x20<p>React\x20Native\x20packager\x20is\x20running\.
+SF:</p>\n\x20\x20\x20\x20<p><a\x20href=\"https://reactnative\.dev\">Visit\
+SF:x20documentation</a></p>\n\x20\x20\x20\x20<p><a\x20href=\"\./debugger-u
+SF:i/\">Go\x20to\x20Debugger\x20UI</a></p>\n\x20\x20</body>\n</html>\n")%r
+SF:(FourOhFourRequest,223,"HTTP/1\.1\x20404\x20Not\x20Found\r\nX-Content-T
+SF:ype-Options:\x20nosniff\r\nSurrogate-Control:\x20no-store\r\nCache-Cont
+SF:rol:\x20no-store,\x20no-cache,\x20must-revalidate,\x20proxy-revalidate\
+SF:r\nPragma:\x20no-cache\r\nExpires:\x200\r\nContent-Security-Policy:\x20
+SF:default-src\x20'none'\r\nContent-Type:\x20text/html;\x20charset=utf-8\r
+SF:\nContent-Length:\x20174\r\nVary:\x20Accept-Encoding\r\nDate:\x20Mon,\x
+SF:2004\x20Aug\x202025\x2011:31:20\x20GMT\r\nConnection:\x20close\r\n\r\n<
+SF:!DOCTYPE\x20html>\n<html\x20lang=\"en\">\n<head>\n<meta\x20charset=\"ut
+SF:f-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot\x20GET\x20/n
+SF:ice%20ports%2C/Tri%6Eity\.txt%2ebak</pre>\n</body>\n</html>\n")%r(SIPOp
+SF:tions,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\
+SF:n\r\n")%r(WWWOFFLEctrlstat,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:nnection:\x20close\r\n\r\n")%r(HTTPOptions,22E,"HTTP/1\.1\x20200\x20OK\
+SF:r\nX-Content-Type-Options:\x20nosniff\r\nSurrogate-Control:\x20no-store
+SF:\r\nCache-Control:\x20no-store,\x20no-cache,\x20must-revalidate,\x20pro
+SF:xy-revalidate\r\nPragma:\x20no-cache\r\nExpires:\x200\r\nContent-Type:\
+SF:x20text/html\r\nVary:\x20Accept-Encoding\r\nDate:\x20Mon,\x2004\x20Aug\
+SF:x202025\x2011:31:25\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20
+SF:html>\n<html>\n\x20\x20<head>\n\x20\x20\x20\x20<title>React\x20Native</
+SF:title>\n\x20\x20</head>\n\x20\x20<body>\n\x20\x20\x20\x20<p>React\x20Na
+SF:tive\x20packager\x20is\x20running\.</p>\n\x20\x20\x20\x20<p><a\x20href=
+SF:\"https://reactnative\.dev\">Visit\x20documentation</a></p>\n\x20\x20\x
+SF:20\x20<p><a\x20href=\"\./debugger-ui/\">Go\x20to\x20Debugger\x20UI</a><
+SF:/p>\n\x20\x20</body>\n</html>\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8082-TCP:V=7.95%I=7%D=8/4%Time=68909A0A%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,1DFE,"HTTP/1\.1\x20200\x20OK\r\nX-Content-Type-Options:\x20nosn
+SF:iff\r\nSurrogate-Control:\x20no-store\r\nCache-Control:\x20no-store,\x2
+SF:0no-cache,\x20must-revalidate,\x20proxy-revalidate\r\nPragma:\x20no-cac
+SF:he\r\nExpires:\x200\r\nContent-Type:\x20text/html\r\nVary:\x20Accept-En
+SF:coding\r\nDate:\x20Mon,\x2004\x20Aug\x202025\x2011:31:20\x20GMT\r\nConn
+SF:ection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html>\n\x20\x20<head>\n\x2
+SF:0\x20\x20\x20<title>React\x20Native</title>\n\n\x20\x20\x20\x20<style>\
+SF:n\x20\x20\x20\x20\x20\x20body\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20fon
+SF:t-family:\x20sans-serif;\n\x20\x20\x20\x20\x20\x20\x20\x20padding:\x201
+SF:2px;\n\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#1c1e21;\n\x20\x20\x20\
+SF:x20\x20\x20}\n\n\x20\x20\x20\x20\x20\x20\.main\x20{\n\x20\x20\x20\x20\x
+SF:20\x20\x20\x20display:\x20flex;\n\x20\x20\x20\x20\x20\x20\x20\x20align-
+SF:items:\x20center;\n\x20\x20\x20\x20\x20\x20\x20\x20box-sizing:\x20borde
+SF:r-box;\n\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20800px;\n\x20\x20\
+SF:x20\x20\x20\x20\x20\x20padding:\x2016px;\n\x20\x20\x20\x20\x20\x20\x20\
+SF:x20margin-bottom:\x201em;\n\x20\x20\x20\x20\x20\x20\x20\x20border-radiu
+SF:s:\x206px;\n\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#eef9fd;\n\x
+SF:20\x20\x20\x20\x20\x20\x20\x20color:\x20#4d3800;\n\x20\x20\x20\x20\x20\
+SF:x20\x20\x20font-size:\x2016px;\n\x20\x20\x20\x20\x20\x20\x20\x20font-we
+SF:ight:\x20500;\n\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201\.6;\n\
+SF:x20\x20\x20\x20\x20\x20}\n\n\x20\x20\x20\x20\x20\x20p\x20{\n\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20margin:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20mar
+SF:gin-left:\x2016px;\n\x20\x20\x20\x20\x20\x20}\n\n\x20\x20\x20\x20\x20\x
+SF:20a\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#357")%r(FourOhFour
+SF:Request,223,"HTTP/1\.1\x20404\x20Not\x20Found\r\nX-Content-Type-Options
+SF::\x20nosniff\r\nSurrogate-Control:\x20no-store\r\nCache-Control:\x20no-
+SF:store,\x20no-cache,\x20must-revalidate,\x20proxy-revalidate\r\nPragma:\
+SF:x20no-cache\r\nExpires:\x200\r\nContent-Security-Policy:\x20default-src
+SF:\x20'none'\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-L
+SF:ength:\x20174\r\nVary:\x20Accept-Encoding\r\nDate:\x20Mon,\x2004\x20Aug
+SF:\x202025\x2011:31:20\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x2
+SF:0html>\n<html\x20lang=\"en\">\n<head>\n<meta\x20charset=\"utf-8\">\n<ti
+SF:tle>Error</title>\n</head>\n<body>\n<pre>Cannot\x20GET\x20/nice%20ports
+SF:%2C/Tri%6Eity\.txt%2ebak</pre>\n</body>\n</html>\n");
+MAC Address: 90:65:84:13:24:C8 (Intel Corporate)
+
+Nmap scan report for 192.168.2.133
+Host is up (0.017s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT     STATE SERVICE VERSION
+135/tcp  open  msrpc   Microsoft Windows RPC
+3306/tcp open  mysql   MySQL (unauthorized)
+MAC Address: F4:8C:50:A4:66:81 (Intel Corporate)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.2.135
+Host is up (0.017s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT  STATE    SERVICE VERSION
+7/tcp filtered echo
+MAC Address: E2:5B:38:A2:0C:AC (Unknown)
+
+Nmap scan report for 192.168.2.139
+Host is up (0.029s latency).
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3306/tcp open  mysql         MySQL 8.0.38
+MAC Address: D4:E9:8A:79:6C:97 (Intel Corporate)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.2.141
+Host is up (0.051s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT     STATE SERVICE          VERSION
+8081/tcp open  blackice-icecap?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8081-TCP:V=7.95%I=7%D=8/4%Time=68909A10%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,22E,"HTTP/1\.1\x20200\x20OK\r\nX-Content-Type-Options:\x20nosni
+SF:ff\r\nSurrogate-Control:\x20no-store\r\nCache-Control:\x20no-store,\x20
+SF:no-cache,\x20must-revalidate,\x20proxy-revalidate\r\nPragma:\x20no-cach
+SF:e\r\nExpires:\x200\r\nContent-Type:\x20text/html\r\nVary:\x20Accept-Enc
+SF:oding\r\nDate:\x20Mon,\x2004\x20Aug\x202025\x2011:31:28\x20GMT\r\nConne
+SF:ction:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html>\n\x20\x20<head>\n\x20
+SF:\x20\x20\x20<title>React\x20Native</title>\n\x20\x20</head>\n\x20\x20<b
+SF:ody>\n\x20\x20\x20\x20<p>React\x20Native\x20packager\x20is\x20running\.
+SF:</p>\n\x20\x20\x20\x20<p><a\x20href=\"https://reactnative\.dev\">Visit\
+SF:x20documentation</a></p>\n\x20\x20\x20\x20<p><a\x20href=\"\./debugger-u
+SF:i/\">Go\x20to\x20Debugger\x20UI</a></p>\n\x20\x20</body>\n</html>\n")%r
+SF:(FourOhFourRequest,223,"HTTP/1\.1\x20404\x20Not\x20Found\r\nX-Content-T
+SF:ype-Options:\x20nosniff\r\nSurrogate-Control:\x20no-store\r\nCache-Cont
+SF:rol:\x20no-store,\x20no-cache,\x20must-revalidate,\x20proxy-revalidate\
+SF:r\nPragma:\x20no-cache\r\nExpires:\x200\r\nContent-Security-Policy:\x20
+SF:default-src\x20'none'\r\nContent-Type:\x20text/html;\x20charset=utf-8\r
+SF:\nContent-Length:\x20174\r\nVary:\x20Accept-Encoding\r\nDate:\x20Mon,\x
+SF:2004\x20Aug\x202025\x2011:31:28\x20GMT\r\nConnection:\x20close\r\n\r\n<
+SF:!DOCTYPE\x20html>\n<html\x20lang=\"en\">\n<head>\n<meta\x20charset=\"ut
+SF:f-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot\x20GET\x20/n
+SF:ice%20ports%2C/Tri%6Eity\.txt%2ebak</pre>\n</body>\n</html>\n")%r(SIPOp
+SF:tions,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\
+SF:n\r\n")%r(WWWOFFLEctrlstat,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:nnection:\x20close\r\n\r\n")%r(HTTPOptions,22E,"HTTP/1\.1\x20200\x20OK\
+SF:r\nX-Content-Type-Options:\x20nosniff\r\nSurrogate-Control:\x20no-store
+SF:\r\nCache-Control:\x20no-store,\x20no-cache,\x20must-revalidate,\x20pro
+SF:xy-revalidate\r\nPragma:\x20no-cache\r\nExpires:\x200\r\nContent-Type:\
+SF:x20text/html\r\nVary:\x20Accept-Encoding\r\nDate:\x20Mon,\x2004\x20Aug\
+SF:x202025\x2011:31:33\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20
+SF:html>\n<html>\n\x20\x20<head>\n\x20\x20\x20\x20<title>React\x20Native</
+SF:title>\n\x20\x20</head>\n\x20\x20<body>\n\x20\x20\x20\x20<p>React\x20Na
+SF:tive\x20packager\x20is\x20running\.</p>\n\x20\x20\x20\x20<p><a\x20href=
+SF:\"https://reactnative\.dev\">Visit\x20documentation</a></p>\n\x20\x20\x
+SF:20\x20<p><a\x20href=\"\./debugger-ui/\">Go\x20to\x20Debugger\x20UI</a><
+SF:/p>\n\x20\x20</body>\n</html>\n");
+MAC Address: 90:65:84:AA:15:EF (Intel Corporate)
+
+Nmap scan report for 192.168.2.142
+Host is up (0.20s latency).
+All 1000 scanned ports on 192.168.2.142 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: EC:8E:77:A2:A2:BA (Unknown)
+
+Nmap scan report for 192.168.2.143
+Host is up.
+All 1000 scanned ports on 192.168.2.143 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: F0:20:FF:FA:11:7B (Intel Corporate)
+
+Nmap scan report for 192.168.2.145
+Host is up (0.017s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE       VERSION
+135/tcp open  msrpc         Microsoft Windows RPC
+445/tcp open  microsoft-ds?
+MAC Address: E8:D0:FC:E0:98:F1 (Liteon Technology)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.2.155
+Host is up (0.095s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+2701/tcp open  cmrcservice   Microsoft Configuration Manager Remote Control service (CmRcService.exe)
+3389/tcp open  ms-wbt-server
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3389-TCP:V=7.95%I=7%D=8/4%Time=68909A15%P=x86_64-pc-linux-gnu%r(Ter
+SF:minalServerCookie,13,"\x03\0\0\x13\x0e\xd0\0\0\x124\0\x02\?\x08\0\x02\0
+SF:\0\0");
+MAC Address: C8:5E:A9:25:56:43 (Intel Corporate)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.2.157
+Host is up (0.014s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE    VERSION
+80/tcp   open  http       Virata-EmWeb/R6_2_1
+443/tcp  open  ssl/https  Virata-EmWeb/R6_2_1
+515/tcp  open  printer
+631/tcp  open  ssl/ipp    Virata-EmWeb/R6_2_1
+8080/tcp open  http-proxy Virata-EmWeb/R6_2_1
+9100/tcp open  jetdirect?
+4 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=8/4%Time=68909A11%P=x86_64-pc-linux-gnu%r(GetRe
+SF:quest,2B,"HTTP/1\.1\x20505\x20HTTP\x20Version\x20not\x20supported\r\n\r
+SF:\n")%r(HTTPOptions,2B,"HTTP/1\.1\x20505\x20HTTP\x20Version\x20not\x20su
+SF:pported\r\n\r\n")%r(RTSPRequest,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\n\r\n")%r(X11Probe,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r
+SF:(FourOhFourRequest,2B,"HTTP/1\.1\x20505\x20HTTP\x20Version\x20not\x20su
+SF:pported\r\n\r\n")%r(GenericLines,1C,"HTTP/1\.1\x20400\x20Bad\x20Request
+SF:\r\n\r\n")%r(RPCCheck,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%
+SF:r(DNSVersionBindReqTCP,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")
+SF:%r(DNSStatusRequestTCP,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")
+SF:%r(Help,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(SSLSessionRe
+SF:q,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(TerminalServerCook
+SF:ie,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(TLSSessionReq,1C,
+SF:"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(Kerberos,1C,"HTTP/1\.1\
+SF:x20400\x20Bad\x20Request\r\n\r\n")%r(SMBProgNeg,1C,"HTTP/1\.1\x20400\x2
+SF:0Bad\x20Request\r\n\r\n")%r(LPDString,1C,"HTTP/1\.1\x20400\x20Bad\x20Re
+SF:quest\r\n\r\n")%r(LDAPSearchReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\n\r\n")%r(LDAPBindReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n"
+SF:)%r(SIPOptions,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(LANDe
+SF:sk-RC,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(TerminalServer
+SF:,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(NCP,1C,"HTTP/1\.1\x
+SF:20400\x20Bad\x20Request\r\n\r\n")%r(NotesRPC,1C,"HTTP/1\.1\x20400\x20Ba
+SF:d\x20Request\r\n\r\n")%r(JavaRMI,1C,"HTTP/1\.1\x20400\x20Bad\x20Request
+SF:\r\n\r\n")%r(WMSRequest,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n"
+SF:)%r(oracle-tns,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(ms-sq
+SF:l-s,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(afp,1C,"HTTP/1\.
+SF:1\x20400\x20Bad\x20Request\r\n\r\n")%r(giop,1C,"HTTP/1\.1\x20400\x20Bad
+SF:\x20Request\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=8/4%Time=68909A18%P=x86_64-pc-linux-gnu%
+SF:r(GetRequest,2B,"HTTP/1\.1\x20505\x20HTTP\x20Version\x20not\x20supporte
+SF:d\r\n\r\n")%r(HTTPOptions,2B,"HTTP/1\.1\x20505\x20HTTP\x20Version\x20no
+SF:t\x20supported\r\n\r\n")%r(FourOhFourRequest,2B,"HTTP/1\.1\x20505\x20HT
+SF:TP\x20Version\x20not\x20supported\r\n\r\n")%r(tor-versions,1C,"HTTP/1\.
+SF:1\x20400\x20Bad\x20Request\r\n\r\n")%r(GenericLines,1C,"HTTP/1\.1\x2040
+SF:0\x20Bad\x20Request\r\n\r\n")%r(RTSPRequest,1C,"HTTP/1\.1\x20400\x20Bad
+SF:\x20Request\r\n\r\n")%r(RPCCheck,1C,"HTTP/1\.1\x20400\x20Bad\x20Request
+SF:\r\n\r\n")%r(DNSVersionBindReqTCP,1C,"HTTP/1\.1\x20400\x20Bad\x20Reques
+SF:t\r\n\r\n")%r(DNSStatusRequestTCP,1C,"HTTP/1\.1\x20400\x20Bad\x20Reques
+SF:t\r\n\r\n")%r(Help,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(S
+SF:SLSessionReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(Termina
+SF:lServerCookie,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(TLSSes
+SF:sionReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(Kerberos,1C,
+SF:"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(SMBProgNeg,1C,"HTTP/1\.
+SF:1\x20400\x20Bad\x20Request\r\n\r\n")%r(X11Probe,1C,"HTTP/1\.1\x20400\x2
+SF:0Bad\x20Request\r\n\r\n")%r(LPDString,1C,"HTTP/1\.1\x20400\x20Bad\x20Re
+SF:quest\r\n\r\n")%r(LDAPSearchReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\n\r\n")%r(LDAPBindReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n"
+SF:)%r(SIPOptions,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(LANDe
+SF:sk-RC,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(TerminalServer
+SF:,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(NCP,1C,"HTTP/1\.1\x
+SF:20400\x20Bad\x20Request\r\n\r\n")%r(NotesRPC,1C,"HTTP/1\.1\x20400\x20Ba
+SF:d\x20Request\r\n\r\n")%r(JavaRMI,1C,"HTTP/1\.1\x20400\x20Bad\x20Request
+SF:\r\n\r\n")%r(WMSRequest,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n"
+SF:)%r(oracle-tns,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(ms-sq
+SF:l-s,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(afp,1C,"HTTP/1\.
+SF:1\x20400\x20Bad\x20Request\r\n\r\n")%r(giop,1C,"HTTP/1\.1\x20400\x20Bad
+SF:\x20Request\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port631-TCP:V=7.95%T=SSL%I=7%D=8/4%Time=68909A1E%P=x86_64-pc-linux-gnu%
+SF:r(GenericLines,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(GetRe
+SF:quest,2B,"HTTP/1\.1\x20505\x20HTTP\x20Version\x20not\x20supported\r\n\r
+SF:\n")%r(HTTPOptions,2B,"HTTP/1\.1\x20505\x20HTTP\x20Version\x20not\x20su
+SF:pported\r\n\r\n")%r(RTSPRequest,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\n\r\n")%r(RPCCheck,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r
+SF:(DNSVersionBindReqTCP,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%
+SF:r(DNSStatusRequestTCP,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%
+SF:r(Help,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(SSLSessionReq
+SF:,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(TerminalServerCooki
+SF:e,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(TLSSessionReq,1C,"
+SF:HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(Kerberos,1C,"HTTP/1\.1\x
+SF:20400\x20Bad\x20Request\r\n\r\n")%r(SMBProgNeg,1C,"HTTP/1\.1\x20400\x20
+SF:Bad\x20Request\r\n\r\n")%r(X11Probe,1C,"HTTP/1\.1\x20400\x20Bad\x20Requ
+SF:est\r\n\r\n")%r(FourOhFourRequest,2B,"HTTP/1\.1\x20505\x20HTTP\x20Versi
+SF:on\x20not\x20supported\r\n\r\n")%r(LPDString,1C,"HTTP/1\.1\x20400\x20Ba
+SF:d\x20Request\r\n\r\n")%r(LDAPSearchReq,1C,"HTTP/1\.1\x20400\x20Bad\x20R
+SF:equest\r\n\r\n")%r(LDAPBindReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r
+SF:\n\r\n")%r(SIPOptions,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%
+SF:r(LANDesk-RC,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(Termina
+SF:lServer,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(NCP,1C,"HTTP
+SF:/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(NotesRPC,1C,"HTTP/1\.1\x2040
+SF:0\x20Bad\x20Request\r\n\r\n")%r(JavaRMI,1C,"HTTP/1\.1\x20400\x20Bad\x20
+SF:Request\r\n\r\n")%r(WMSRequest,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r
+SF:\n\r\n")%r(oracle-tns,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%
+SF:r(ms-sql-s,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(afp,1C,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(giop,1C,"HTTP/1\.1\x20400
+SF:\x20Bad\x20Request\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8080-TCP:V=7.95%I=7%D=8/4%Time=68909A16%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,2B,"HTTP/1\.1\x20505\x20HTTP\x20Version\x20not\x20supported\r\n
+SF:\r\n")%r(HTTPOptions,2B,"HTTP/1\.1\x20505\x20HTTP\x20Version\x20not\x20
+SF:supported\r\n\r\n")%r(RTSPRequest,1C,"HTTP/1\.1\x20400\x20Bad\x20Reques
+SF:t\r\n\r\n")%r(FourOhFourRequest,2B,"HTTP/1\.1\x20505\x20HTTP\x20Version
+SF:\x20not\x20supported\r\n\r\n")%r(Socks5,1C,"HTTP/1\.1\x20400\x20Bad\x20
+SF:Request\r\n\r\n")%r(Socks4,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r
+SF:\n")%r(GenericLines,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(
+SF:RPCCheck,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(DNSVersionB
+SF:indReqTCP,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(DNSStatusR
+SF:equestTCP,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(Help,1C,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(SSLSessionReq,1C,"HTTP/1\
+SF:.1\x20400\x20Bad\x20Request\r\n\r\n")%r(TerminalServerCookie,1C,"HTTP/1
+SF:\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(TLSSessionReq,1C,"HTTP/1\.1\x2
+SF:0400\x20Bad\x20Request\r\n\r\n")%r(Kerberos,1C,"HTTP/1\.1\x20400\x20Bad
+SF:\x20Request\r\n\r\n")%r(SMBProgNeg,1C,"HTTP/1\.1\x20400\x20Bad\x20Reque
+SF:st\r\n\r\n")%r(X11Probe,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n"
+SF:)%r(LPDString,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(LDAPSe
+SF:archReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(LDAPBindReq,
+SF:1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(SIPOptions,1C,"HTTP/
+SF:1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(LANDesk-RC,1C,"HTTP/1\.1\x204
+SF:00\x20Bad\x20Request\r\n\r\n")%r(TerminalServer,1C,"HTTP/1\.1\x20400\x2
+SF:0Bad\x20Request\r\n\r\n")%r(NCP,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\n\r\n")%r(NotesRPC,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r
+SF:(JavaRMI,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(WMSRequest,
+SF:1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(oracle-tns,1C,"HTTP/
+SF:1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(ms-sql-s,1C,"HTTP/1\.1\x20400
+SF:\x20Bad\x20Request\r\n\r\n")%r(afp,1C,"HTTP/1\.1\x20400\x20Bad\x20Reque
+SF:st\r\n\r\n")%r(giop,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n");
+MAC Address: E0:70:EA:F8:E9:99 (HP)
+
+Nmap scan report for 192.168.2.158
+Host is up (0.056s latency).
+All 1000 scanned ports on 192.168.2.158 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 72:35:AA:91:28:16 (Unknown)
+
+Nmap scan report for 192.168.2.159
+Host is up (0.18s latency).
+All 1000 scanned ports on 192.168.2.159 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: EC:8E:77:A2:A2:BA (Unknown)
+
+Nmap scan report for 192.168.2.162
+Host is up (0.019s latency).
+Not shown: 997 filtered tcp ports (no-response)
+PORT      STATE SERVICE         VERSION
+7070/tcp  open  ssl/realserver?
+8080/tcp  open  http            Apache httpd
+50001/tcp open  http            Node.js Express framework
+MAC Address: 14:13:33:E0:3F:B5 (AzureWave Technology)
+
+Nmap scan report for 192.168.2.166
+Host is up (0.15s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT      STATE    SERVICE    VERSION
+2100/tcp  filtered amiganetfs
+2809/tcp  filtered corbaloc
+49152/tcp open     tcpwrapped
+62078/tcp open     tcpwrapped
+MAC Address: 4E:D0:9E:42:1B:E7 (Unknown)
+
+Nmap scan report for 192.168.2.170
+Host is up (0.27s latency).
+All 1000 scanned ports on 192.168.2.170 are in ignored states.
+Not shown: 737 closed tcp ports (reset), 263 filtered tcp ports (no-response)
+MAC Address: 52:00:62:7B:DC:50 (Unknown)
+
+Nmap scan report for 192.168.2.182
+Host is up (0.22s latency).
+All 1000 scanned ports on 192.168.2.182 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: E4:A4:71:94:07:0A (Intel Corporate)
+
+Nmap scan report for 192.168.2.183
+Host is up (0.034s latency).
+All 1000 scanned ports on 192.168.2.183 are in ignored states.
+Not shown: 795 closed tcp ports (reset), 205 filtered tcp ports (no-response)
+MAC Address: CA:5B:45:E6:9A:80 (Unknown)
+
+Nmap scan report for 192.168.2.184
+Host is up (0.10s latency).
+All 1000 scanned ports on 192.168.2.184 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: D4:E9:8A:77:EA:52 (Intel Corporate)
+
+Nmap scan report for 192.168.2.185
+Host is up (0.18s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE    SERVICE VERSION
+5060/tcp filtered sip
+MAC Address: 9A:23:F0:C7:72:8D (Unknown)
+
+Nmap scan report for 192.168.2.201
+Host is up (0.0092s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      TP-LINK HTTPD/1.0
+443/tcp open  ssl/https TP-LINK HTTPD/1.0
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=8/4%Time=68909A17%P=x86_64-pc-linux-gnu%r(GetRe
+SF:quest,2AE2,"HTTP/1\.1\x20200\x20OK\r\nServer:\x20TP-LINK\x20HTTPD/1\.0\
+SF:r\nX-Frame-Options:\x20SAMEORIGIN\r\nConnection:\x20close\r\nSet-Cookie
+SF::\x20COOKIE=ae02a8c03df29e90d329f4f2c10263a44150daea;\x20PATH=/;\x20MAX
+SF:AGE=9999;\x20VERSION=1\r\nContent-Type:\x20text/html\r\n\r\n<!DOCTYPE\x
+SF:20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\
+SF:"\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\">\r\
+SF:n<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\">\r\n<head>\r\n<meta\
+SF:x20http-equiv=\"Content-Type\"\x20content=\"text/html;\x20charset=utf-8
+SF:\"\x20/>\r\n<meta\x20http-equiv=\"pragma\"\x20content=\"no-cache\"\x20/
+SF:>\r\n<meta\x20http-equiv=\"Cache-Control\"\x20content=\"no-cache,\x20mu
+SF:st-revalidate\"\x20/>\r\n<meta\x20http-equiv=\"expires\"\x20content=\"W
+SF:ed,\x2026\x20Feb\x201997\x2008:33:43\x20GMT\"\x20/>\r\n<!--\x20<link\x2
+SF:0type=\"text/css\"\x20href=\"\.\./css/reset\.css\"\x20rel=\"stylesheet\
+SF:"\x20/>\x20-->\r\n<link\x20type=\"text/css\"\x20href=\"\.\./css/widget\
+SF:.css\"\x20rel=\"stylesheet\"\x20/>\r\n\r\n<link\x20type=\"text/css\"\x2
+SF:0href=\"\.\./themes/dark/css/widget\.css\"\x20rel=\"stylesheet\"\x20/>\
+SF:r\n<link\x20type=\"text/css\"\x20")%r(HTTPOptions,132,"HTTP/1\.1\x20404
+SF:\x20Not\x20Found\r\nServer:\x20TP-LINK\x20HTTPD/1\.0\r\nX-Frame-Options
+SF::\x20SAMEORIGIN\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r
+SF:\n\r\n<H1>Web\x20Server\x20Error\x20Report:</H1><HR>\n<H2>Server\x20Err
+SF:or:\x20404\x20Not\x20Found</H2><HR>\r\n<H2>File\x20not\x20found</H2><HR
+SF:>\r\n<H2>/index\.html</H2><HR>\r\n<H3>Please\x20contact\x20customer\x20
+SF:service</H3><HR>\n")%r(RTSPRequest,132,"HTTP/1\.1\x20404\x20Not\x20Foun
+SF:d\r\nServer:\x20TP-LINK\x20HTTPD/1\.0\r\nX-Frame-Options:\x20SAMEORIGIN
+SF:\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<H1>Web\x
+SF:20Server\x20Error\x20Report:</H1><HR>\n<H2>Server\x20Error:\x20404\x20N
+SF:ot\x20Found</H2><HR>\r\n<H2>File\x20not\x20found</H2><HR>\r\n<H2>/index
+SF:\.html</H2><HR>\r\n<H3>Please\x20contact\x20customer\x20service</H3><HR
+SF:>\n")%r(FourOhFourRequest,12C,"HTTP/1\.1\x20404\x20Not\x20Found\r\nServ
+SF:er:\x20TP-LINK\x20HTTPD/1\.0\r\nX-Frame-Options:\x20SAMEORIGIN\r\nConne
+SF:ction:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<H1>Web\x20Server\
+SF:x20Error\x20Report:</H1><HR>\n<H2>Server\x20Error:\x20404\x20Not\x20Fou
+SF:nd</H2><HR>\r\n<H2>File\x20not\x20found</H2><HR>\r\n<H2>/nice</H2><HR>\
+SF:r\n<H3>Please\x20contact\x20customer\x20service</H3><HR>\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=8/4%Time=68909A1B%P=x86_64-pc-linux-gnu%
+SF:r(GetRequest,2AE2,"HTTP/1\.1\x20200\x20OK\r\nServer:\x20TP-LINK\x20HTTP
+SF:D/1\.0\r\nX-Frame-Options:\x20SAMEORIGIN\r\nConnection:\x20close\r\nSet
+SF:-Cookie:\x20COOKIE=ae02a8c0788da2b952251c1d58342c2c1eaa6045;\x20PATH=/;
+SF:\x20MAXAGE=9999;\x20VERSION=1\r\nContent-Type:\x20text/html\r\n\r\n<!DO
+SF:CTYPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transition
+SF:al//EN\"\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dt
+SF:d\">\r\n<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\">\r\n<head>\r\
+SF:n<meta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;\x20charse
+SF:t=utf-8\"\x20/>\r\n<meta\x20http-equiv=\"pragma\"\x20content=\"no-cache
+SF:\"\x20/>\r\n<meta\x20http-equiv=\"Cache-Control\"\x20content=\"no-cache
+SF:,\x20must-revalidate\"\x20/>\r\n<meta\x20http-equiv=\"expires\"\x20cont
+SF:ent=\"Wed,\x2026\x20Feb\x201997\x2008:33:43\x20GMT\"\x20/>\r\n<!--\x20<
+SF:link\x20type=\"text/css\"\x20href=\"\.\./css/reset\.css\"\x20rel=\"styl
+SF:esheet\"\x20/>\x20-->\r\n<link\x20type=\"text/css\"\x20href=\"\.\./css/
+SF:widget\.css\"\x20rel=\"stylesheet\"\x20/>\r\n\r\n<link\x20type=\"text/c
+SF:ss\"\x20href=\"\.\./themes/dark/css/widget\.css\"\x20rel=\"stylesheet\"
+SF:\x20/>\r\n<link\x20type=\"text/css\"\x20")%r(HTTPOptions,132,"HTTP/1\.1
+SF:\x20404\x20Not\x20Found\r\nServer:\x20TP-LINK\x20HTTPD/1\.0\r\nX-Frame-
+SF:Options:\x20SAMEORIGIN\r\nConnection:\x20close\r\nContent-Type:\x20text
+SF:/html\r\n\r\n<H1>Web\x20Server\x20Error\x20Report:</H1><HR>\n<H2>Server
+SF:\x20Error:\x20404\x20Not\x20Found</H2><HR>\r\n<H2>File\x20not\x20found<
+SF:/H2><HR>\r\n<H2>/index\.html</H2><HR>\r\n<H3>Please\x20contact\x20custo
+SF:mer\x20service</H3><HR>\n")%r(FourOhFourRequest,12C,"HTTP/1\.1\x20404\x
+SF:20Not\x20Found\r\nServer:\x20TP-LINK\x20HTTPD/1\.0\r\nX-Frame-Options:\
+SF:x20SAMEORIGIN\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n
+SF:\r\n<H1>Web\x20Server\x20Error\x20Report:</H1><HR>\n<H2>Server\x20Error
+SF::\x20404\x20Not\x20Found</H2><HR>\r\n<H2>File\x20not\x20found</H2><HR>\
+SF:r\n<H2>/nice</H2><HR>\r\n<H3>Please\x20contact\x20customer\x20service</
+SF:H3><HR>\n")%r(GenericLines,12E,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nS
+SF:erver:\x20TP-LINK\x20HTTPD/1\.0\r\nX-Frame-Options:\x20SAMEORIGIN\r\nCo
+SF:nnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<H1>Web\x20Serv
+SF:er\x20Error\x20Report:</H1><HR>\n<H2>Server\x20Error:\x20400\x20Bad\x20
+SF:Request</H2><HR>\r\n<H2>URL\x20parsing\x20error</H2><HR>\r\n<H2></H2><H
+SF:R>\r\n<H3>Please\x20contact\x20customer\x20service</H3><HR>\n");
+MAC Address: F0:A7:31:93:60:70 (TP-Link Limited)
+
+Nmap scan report for 192.168.2.202
+Host is up (0.027s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE         VERSION
+135/tcp  open  msrpc           Microsoft Windows RPC
+139/tcp  open  netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+2179/tcp open  vmrdp?
+7070/tcp open  ssl/realserver?
+MAC Address: 84:14:4D:2F:47:48 (Intel Corporate)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.2.208
+Host is up (0.019s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE    SERVICE VERSION
+5060/tcp filtered sip
+MAC Address: 46:87:31:BC:5C:78 (Unknown)
+
+Nmap scan report for 192.168.2.210
+Host is up (0.085s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE    SERVICE VERSION
+5060/tcp filtered sip
+MAC Address: 76:93:3D:BD:B7:B1 (Unknown)
+
+Nmap scan report for 192.168.2.212
+Host is up (0.082s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 10.0
+MAC Address: 5C:BA:EF:5F:87:69 (Chongqing Fugui Electronics)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.2.215
+Host is up (0.099s latency).
+All 1000 scanned ports on 192.168.2.215 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 8C:3B:4A:AE:93:D3 (Universal Global Scientific Industrial)
+
+Nmap scan report for 192.168.2.219
+Host is up (0.037s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE    VERSION
+80/tcp open  tcpwrapped
+MAC Address: C0:A5:E8:7D:F6:4A (Intel Corporate)
+
+Nmap scan report for 192.168.2.221
+Host is up (0.14s latency).
+All 1000 scanned ports on 192.168.2.221 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: D0:AB:D5:F4:EE:DF (Intel Corporate)
+
+Nmap scan report for 192.168.2.222
+Host is up (0.028s latency).
+All 1000 scanned ports on 192.168.2.222 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 0E:85:C4:B5:25:28 (Unknown)
+
+Nmap scan report for 192.168.2.229
+Host is up (0.14s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT  STATE    SERVICE VERSION
+7/tcp filtered echo
+MAC Address: 9E:78:9C:BD:CD:47 (Unknown)
+
+Nmap scan report for 192.168.2.230
+Host is up (0.052s latency).
+All 1000 scanned ports on 192.168.2.230 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 34:F3:9A:CD:AF:37 (Intel Corporate)
+
+Nmap scan report for 192.168.2.234
+Host is up (0.13s latency).
+All 1000 scanned ports on 192.168.2.234 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: F8:E4:E3:9E:86:85 (Intel Corporate)
+
+Nmap scan report for 192.168.2.238
+Host is up (0.045s latency).
+All 1000 scanned ports on 192.168.2.238 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: C8:6E:08:29:2D:04 (Unknown)
+
+Nmap scan report for 192.168.2.239
+Host is up (0.077s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT     STATE SERVICE    VERSION
+135/tcp  open  tcpwrapped
+3306/tcp open  tcpwrapped
+MAC Address: AC:50:DE:C9:5A:27 (Cloud Network Technology Singapore PTE.)
+
+Nmap scan report for 192.168.2.240
+Host is up (0.20s latency).
+All 1000 scanned ports on 192.168.2.240 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 50:EB:71:A9:68:07 (Intel Corporate)
+
+Nmap scan report for 192.168.2.248
+Host is up (0.089s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE    SERVICE VERSION
+5060/tcp filtered sip
+MAC Address: 90:78:B2:BC:1F:D7 (Xiaomi Communications)
+
+Nmap scan report for 192.168.2.174
+Host is up (0.0000050s latency).
+All 1000 scanned ports on 192.168.2.174 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Aug  4 17:03:48 2025 -- 256 IP addresses (45 hosts up) scanned in 2483.79 seconds
